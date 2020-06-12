@@ -449,3 +449,52 @@ header {
   padding: 18px 0 21px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Portfolio */
+
+/* filtr */
+
+.filtr {
+  padding-top: 94px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  min-width: 73px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-backgrond);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--secondary-white-color);
+  background-color: var(--accent-collor);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card {
+  width: 370px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-card:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.filtr-item {
+  padding: 63px 24px;
+}
+
+.portfolio-card p {
+  margin: 0;
+}
+.projects-item {
+  margin: 20px 0 4px 0;
+}
