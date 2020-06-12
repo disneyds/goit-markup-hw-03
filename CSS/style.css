@@ -1,0 +1,451 @@
+/* Палитра цветов */
+/* 
+    Основной фон  #FFFFFF;
+    Вторичный фон  #F5F4FA;
+    Футер фон #2F303A;
+    Акцент #2196F3;
+    Иконки по умолчанию #AFB1B8;
+    Основной цвет текста #757575;
+    Вторичный цвет текста #212121;
+    
+    
+*/
+
+:root {
+  --main-backgrond: #ffffff;
+  --secondary-backgrond: #f5f4fa;
+  --accent-collor: #2196f3;
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --secondary-white-color: #ffffff;
+}
+/* Обнуление */
+
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-style: inherit;
+}
+body {
+  font-family: 'roboto', sans-serif;
+  color: var(--main-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* Стили текста и цвета */
+
+/* Header */
+
+header {
+  background-color: var(--main-backgrond);
+}
+
+/* Стиль логотиа */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 26px;
+}
+.main-logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-collor);
+  font-weight: 700;
+  font-size: 26px;
+}
+.logo:hover,
+.logo:focus {
+  text-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+/* Стили главной навигации */
+.main-nav {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-collor);
+}
+
+.active {
+  color: var(--accent-collor);
+}
+
+/* Стиль аднесса */
+.mail:hover,
+.mail:focus,
+.phone:hover,
+.phone:focus {
+  color: var(--accent-collor);
+}
+
+/* Footer */
+
+.footer-logo {
+  color: var(--secondary-white-color);
+}
+footer {
+  color: var(--secondary-wight-color);
+  background-color: #2f303a;
+}
+
+.footer-address {
+  color: var(--secondary-white-color);
+}
+
+.footer-link {
+  color: var(--secondary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-collor);
+}
+.subscribe {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts .link:hover {
+  color: var(--accent-collor);
+}
+.c-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 200%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* main */
+.hero {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-title {
+  color: var(--secondary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  color: var(--secondary-white-color);
+}
+
+.features-item {
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+}
+/* work */
+
+.work-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 117%;
+  text-align: center;
+}
+
+.work-item {
+  color: var(--secondary-white-color);
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* team */
+
+.team {
+  background-color: var(--secondary-backgrond);
+}
+.human:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.human-contacts .link:hover,
+.human-contacts .link:focus {
+  color: var(--accent-collor);
+}
+.team-name {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  /* text-align: center; */
+}
+
+/* Company */
+
+.company-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 117%;
+  text-align: center;
+}
+
+.company-item:hover,
+.company-item:focus {
+  color: var(--accent-collor);
+}
+
+/* portfolio */
+
+.filtr-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  background-color: var(--secondary-backgrond);
+  color: var(--secondary-text-color);
+}
+
+.filtr-item:hover,
+.filtr-item:focus {
+  color: var(--secondary-white-color);
+  background-color: var(--accent-collor);
+}
+
+.projects-item {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+}
+
+.human {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.box-title {
+  color: var(--secondary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-title,
+.team-title,
+.company-title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.invisibl {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0);
+}
+
+/* Блочная модель */
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 3px solid aqua; */
+}
+
+.btn {
+  display: inline-block;
+  min-width: 200px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  border-radius: 6px;
+  color: var(--secondary-white-color);
+  background-color: var(--accent-collor);
+}
+
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
+
+/* header */
+
+header {
+  padding: 25px 0;
+}
+
+/* hero */
+
+.hero {
+  text-align: center;
+  padding: 200px 0;
+}
+
+.hero-link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* features */
+
+.features {
+  padding-top: 94px;
+}
+
+.features-item {
+  margin-top: 30px;
+}
+
+.features-text {
+  margin-top: 10px;
+}
+
+/* Work */
+
+.work {
+  padding: 94px 0;
+}
+
+.box-title {
+  width: 370px;
+  padding: 27px 82px;
+}
+
+.work ul {
+  margin-top: 50px;
+}
+
+/* team */
+
+.team {
+  padding: 94px 0;
+}
+
+.team ul {
+  margin-top: 50px;
+}
+
+.human {
+  width: 270px;
+  text-align: center;
+}
+
+.team > ul {
+  margin-top: 50px;
+}
+
+.human > h3 {
+  margin-top: 30px;
+}
+
+.human > p {
+  margin-top: 10px;
+}
+
+.human > ul {
+  margin: 16px;
+}
+
+/* company */
+
+.company {
+  padding: 94px 0;
+  text-align: center;
+}
+
+.company-list {
+  margin-top: 50px;
+}
+
+/* footer */
+
+.footer {
+  padding-top: 45px;
+}
+
+.btn-icon {
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  border-radius: 50px;
+  color: var(--secondary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-icon:hover,
+.btn:focus {
+  background-color: var(--accent-collor);
+}
+
+.contacts {
+  margin-top: 8px;
+}
+.contacts > .link {
+  display: inline-block;
+  margin-top: 9px;
+}
+
+.subscribe {
+  color: var(--secondary-white-color);
+  display: inline-block;
+  margin-top: 57px;
+}
+
+/* c-right */
+
+.c-right {
+  padding: 18px 0 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
