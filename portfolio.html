@@ -17,46 +17,45 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="conteiner">
-        <a href="./index.html" class="logo">
-          <span class="main-logo">Web </span>Studio
-        </a>
-        <nav class="main-nav">
-          <ul class="no-padding no-margin">
-            <li>
-              <a href="./index.html" class="link ">Студия</a>
-            </li>
-            <li>
-              <a href="./portfolio.html" class="link active">Портфолио </a>
-            </li>
-            <li>
-              <a href="" class="link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address>
-          <a href="mailto:info@devstudio.com" class="mail"
-            >info@devstudio.com</a
-          >
+<header class="header">
+  <div class="conteiner header-flex ">
+    <a href="./index.html" class="logo">
+      <span class="main-logo">Web </span>Studio
+    </a>
+    <nav class="main-nav">
+      <ul class="no-padding no-margin flex-nav">
+        <li class="item">
+          <a href="./index.html" class="link ">Студия</a>
+        </li>
+        <li class="item">
+          <a href="./portfolio.html" class="link active">Портфолио </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="header-address">
+      <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
 
-          <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
-        </address>
-      </div>
-    </header>
+      <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
+    </address>
+  </div>
+</header>
 
     <main>
+      <div class="portfolio">
       <h1 class=" is-hidden">Портфолио</h1>
       <!-- filter -->
       <section>
         <div class="filtr">
         <h2 class="filtr-title is-hidden">Фильтр</h2>
-        <ul class="conteiner">
-          <li><button type="button" class="btn-secondary">Всё</button></li>
-          <li><button type="button" class="btn-secondary">Веб-сайты</button></li>
-          <li><button type="button" class="btn-secondary">Приложения</button></li>
-          <li><button type="button" class="btn-secondary">Дизайн</button></li>
-          <li><button type="button" class="btn-secondary">Маркетинг</button></li>
+        <ul class="conteiner filtr-flex">
+          <li class="item"><button type="button" class="btn-secondary">Всё</button></li>
+          <li class="item"><button type="button" class="btn-secondary">Веб-сайты</button></li>
+          <li class="item"><button type="button" class="btn-secondary">Приложения</button></li>
+          <li class="item"><button type="button" class="btn-secondary">Дизайн</button></li>
+          <li class="item"><button type="button" class="btn-secondary">Маркетинг</button></li>
         </ul>
         </div>
       </section>
@@ -64,7 +63,7 @@
       <section class="projects">
         <div  class="conteiner">
         <h2 class="projects-title is-hidden">Проекты</h2>
-        <ul class="no-margin no-padding">
+        <ul class="no-margin no-padding projects-list">
           <li class="portfolio-card">
             <a href="">
               <img src="./img/img1.jpg" alt="image" width="370px" />
@@ -176,45 +175,51 @@
         </ul>
         </div>
       </section>
+      </div>
     </main>
     <footer class="footer">
-      <div class="conteiner">
-        <a href="./index.html" class="logo">
-          <span class="main-logo">Web </span>
-          <span class="footer-logo">Studio </span>
-        </a>
+      <div class="conteiner footer-flex">
+    
     
         <address class="contacts">
+          <a href="./index.html" class="logo">
+            <span class="main-logo">Web </span>
+            <span class="footer-logo">Studio </span>
+          </a></br>
           <span class="footer-address">г. Киев, пр-т Леси Украинки, 26</span></br>
           <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></br>
           <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
         </address>
-        <b class="subscribe">Присоединяйтесь</b>
-        <ul class="no-margin no-padding">
-          <li>
-            <a href="https://www.instagram.com/" class="footer-link btn-icon">
-              I
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/explore" class="footer-link btn-icon">
-              T
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/" class="footer-link btn-icon">
-              F
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/" class="footer-link btn-icon">
-              Li
-            </a>
-          </li>
-        </ul>
-        <b class="subscribe">Подпишитесь на рассылку</b>
-        <!-- <form action=""></form>
+        <div class="subscribe-conteiner">
+          <b class="subscribe">Присоединяйтесь</b>
+          <ul class="no-margin no-padding sub-flex">
+            <li class="item">
+              <a href="https://www.instagram.com/" class="footer-link btn-icon">
+                I
+              </a>
+            </li>
+            <li class="item">
+              <a href="https://twitter.com/explore" class="footer-link btn-icon">
+                T
+              </a>
+            </li>
+            <li class="item">
+              <a href="https://www.facebook.com/" class="footer-link btn-icon">
+                F
+              </a>
+            </li>
+            <li class="item">
+              <a href="https://www.linkedin.com/" class="footer-link btn-icon">
+                Li
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="form-conteiner">
+          <b class="subscribe">Подпишитесь на рассылку</b>
+          <!-- <form action=""></form>
                 <button>Подписаться</button> -->
+        </div>
       </div>
       <div class="conteiner">
         <p class="c-right no-margin no-padding">2020 | Developed by GoIT Students</p>
